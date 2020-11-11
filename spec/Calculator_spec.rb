@@ -21,4 +21,8 @@ describe Calculator do
     it 'adds the two integers together' do 
         expect(calculator.add(10,10)).to eq "The answer is 20"
     end
+
+    it 'subtracts the two integers' do 
+        expect(calculator.subtract(20,10)).to eq "The answer is 10"
+    end
 end
