@@ -9,4 +9,8 @@ describe Calculator do
     it 'creates a new instance of calculator' do 
         expect(calculator).to be_instance_of Calculator 
     end 
-end 
+
+    it 'receives the method add ' do 
+        expect(calculator).to respond_to :add  
+    end 
+end
