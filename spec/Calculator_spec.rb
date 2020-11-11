@@ -8,9 +8,13 @@ describe Calculator do
 
     it 'creates a new instance of calculator' do 
         expect(calculator).to be_instance_of Calculator 
-    end 
+    end
 
-    it 'receives the method add ' do 
+    it 'receives the method add' do 
         expect(calculator).to respond_to :add  
     end 
+
+    it 'allows the add method to receive two integers as arguments' do 
+        expect(calculator).to respond_to(:add).with(2).arguments 
+    end
 end
