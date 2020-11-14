@@ -25,4 +25,8 @@ describe Calculator do
     it 'subtracts the two integers' do 
         expect(calculator.subtract(20,10)).to eq "The answer is 10"
     end
+
+    it 'Multiplies the two integers' do 
+        expect(calculator.multiply(20,20)).to eq "The answer is 400"
+    end
 end
