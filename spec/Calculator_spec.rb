@@ -29,4 +29,8 @@ describe Calculator do
     it 'Multiplies the two integers' do 
         expect(calculator.multiply(20,20)).to eq "The answer is 400"
     end
+
+    it 'Divides the two integers' do 
+        expect(calculator.divide(10,2)).to eq "The answer is 5"
+    end
 end
